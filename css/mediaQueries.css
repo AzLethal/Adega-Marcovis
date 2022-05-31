@@ -64,6 +64,9 @@
         width: 50%;
     }
 
+    .cartoes {
+        justify-content: space-between;
+    }
     .titulo-cartao {
         font-size: 2rem;
     }
