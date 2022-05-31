@@ -1,0 +1,397 @@
+
+:root {
+    --verde-padrao: #65E600;
+    --marrom-sobre: #A3512E;
+    --font-padrao: 'Patua One', sans-serif;
+    --font-texto: 'Pavanam', sans-serif;
+}
+
+
+body {
+    background-color: black;
+}
+
+.cabecalho-inicial {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+}
+
+.menu-padrao {
+    display: flex;
+    align-items: center;
+    height: 2.2rem;
+    border-top: 3px solid aliceblue;
+    border-bottom: 3px solid aliceblue;
+}
+
+.logo {
+    width: 2rem;
+    height: 2rem;
+}
+
+.registro {
+    width: 100%;
+    font-family: var(--font-padrao);
+    font-size: 1rem;
+    padding: 0.3rem 0 0.3rem 0.8rem;
+}
+
+.container-inicial {
+    height: 30vh;
+}
+
+.icone{
+    width: 1.5rem;
+    vertical-align: bottom;
+}
+
+.login {
+    padding-right: 3rem;
+    text-decoration: none;
+    color: var(--verde-padrao);
+    vertical-align: bottom;
+}
+
+.cadastro {
+    vertical-align: bottom;
+    text-decoration: none;
+    color: var(--verde-padrao);
+}
+
+.cabecalho-titulo {
+    font-family: var(--font-padrao);
+    text-shadow: .5rem .5rem .2rem black;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    background-image: url("../img/corredor1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw;
+    height: 90%;
+    color: var(--verde-padrao);
+    font-size: 1.5rem;
+}
+
+.link-suspenso {
+    display: none;
+    padding: 0.5rem 0 0.5rem 4rem;
+    transition: 0.57s;
+}
+
+.link-suspenso:hover {
+    cursor: pointer;
+}
+
+.menu-suspenso {
+    margin-left: -700px;
+    transition: margin-left 0.5s;
+    top: 73vh;
+    font-style: italic;
+    position: absolute;
+    background-color: black;
+    color: aliceblue; 
+    width: 25rem;
+    border-radius: 12px;
+    border: 3px solid aliceblue;
+}
+
+.abas {
+    font-family: var(--font-padrao);
+    font-size: 2rem;
+    padding: 0.5rem 0 0.5rem 3rem;
+    border: 2px solid aliceblue;
+}
+
+.lista-produtos {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-texto);
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    text-align: left;
+    list-style: none;
+    border: 1px solid aliceblue;
+}
+
+.lista-produtos:hover {
+    cursor: pointer;
+}
+
+.cerveja, .tequila, .vodka, .refrigerante {
+    display: none;
+    font-size: 1.2rem;
+    font-family: var(--font-texto);
+    padding: 0.5rem 0 0.5rem 3rem;
+    text-align: left;
+    list-style: none;
+    border: 1px solid aliceblue;
+}
+
+.contato-suspenso {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0 1rem 3rem;
+}
+
+.redes-sociais {
+    font-family: var(--font-padrao);
+    text-decoration: none;
+    color: var(--verde-padrao);
+    font-size: 1.2rem;
+    padding: 1rem 0;
+}
+
+.logo-suspenso {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logotipo-suspenso {
+    width: 7.5rem;
+    padding: .8rem;
+}
+
+.slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 1rem;
+    color: var(--verde-padrao);
+}
+
+.titulo-suspenso {
+    font-family: var(--font-padrao);
+    font-size: 2.5rem;
+}
+
+.slogan-suspenso {
+    padding-top: 0.3rem;
+    font-size: 1.5rem;
+}
+
+.menu-nav {
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-padrao);
+    font-size: 0.8rem;
+}
+
+.menu-navegacao {
+    text-decoration: none;
+    color: var(--verde-padrao);
+    padding-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.menu-navegacao:nth-child(4){
+    padding-right: 0;
+}
+
+.container {
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--marrom-sobre);
+    height: 70vh;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-family: var(--font-padrao);
+    color: aliceblue;
+    font-size: 1.8rem;
+    padding: .5rem 0;
+}
+
+.slide-sobre {
+    display: flex;
+    padding-left: 15px;
+    width: 100%;
+    height: 70%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slides {
+    display: none;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.previous, .next {
+    border-radius: 50%;
+    border: 2px solid var(--verde-padrao);
+    font-family: var(--font-padrao);
+    height: 2rem;
+    width: 2rem;
+    font-size: 1rem;
+    color: var(--verde-padrao);
+    background-color: black;
+}
+
+
+.primeira {
+    display: flex;
+    width: 97%;
+    height: 100%;
+    margin: 1rem;
+}
+.segunda {
+    display: none;
+    width: 97%;
+    height: 100%;
+    margin: 1rem;
+}
+
+.terceira {
+    display: none;
+    width: 97%;
+    height: 100%;
+    margin: 1rem;
+}
+
+.open{
+    display: flex;
+}
+
+.close{
+    display: none;
+}
+
+.texto-sobre {
+    font-family: var(--font-padrao);
+    color: aliceblue;
+    font-size: 1.3rem;
+    padding: 1rem;
+    width: 80%;
+}
+
+.divisao-texto {
+    padding-top: 5rem;
+}
+
+.topo {
+    position: fixed;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    top: 90vh;
+}
+
+.produtos {
+    background-color: #163424;
+    padding: 2rem;
+}
+
+.cartoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.cartao {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    align-items: center;
+    padding: 1rem;
+    width: 12rem;
+    height: 20rem;
+    color: aliceblue;
+    font-family: var(--font-padrao);
+    border-radius: 12px;
+}
+
+.img-cartao {
+    width: 90%;
+    height: 50%;
+}
+
+.titulo-cartao {
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.conteudo-cartao {
+    font-family: var(--font-texto);
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.servicos {
+    background-color: #171326;
+    padding: 2rem;
+}
+
+.rodape {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rodape-titulo {
+    text-align: center;
+    font-family: var(--font-padrao);
+    color: aliceblue;
+    font-size: 2rem;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.rodape-mapa {
+    width: 100%;
+    height: 70%;
+}
+
+.rodape-estrutura {
+    width: 100%;
+}
+
+.contato {
+    display: flex;
+    color: aliceblue;
+    font-family: var(--font-texto);
+    padding: 2rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+.siganos {
+    color: aliceblue;
+    padding: 2rem;
+    font-size: 1.2rem;
+    font-family: var(--font-padrao);
+}
+
+.icones {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+}
+
+.icone-redes {
+    width: 1.2rem;
+    padding-right: 0.2rem;
+}
+
+.links {
+    vertical-align: middle;
+    padding-right: 0.5rem;
+    text-decoration: none;
+    color: var(--verde-padrao);
+}
